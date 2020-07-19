@@ -1,5 +1,5 @@
-# GAN-Tricks-2020
-My own list of modern GAN tricks I come across
+# GAN Tricks 2020
+My own list of modern GAN tricks I come across.
 
 
 ## Training Tricks
@@ -9,6 +9,10 @@ My own list of modern GAN tricks I come across
 
 #### Data augmentation
 - Use Differentiable Augmentation to reduce the required training data from ~70k to ~1k-2k, perhaps even the hundreds. Zhao et al. 2020. [Code](https://github.com/mit-han-lab/data-efficient-gans).
+
+#### High definition (HD) output
+- Use ProgressiveGrowing as your base architecture
+- Either that or explore some of the recent AutoEncoder approaches (though these aren't GANs), e.g. ALAE
 
 
 ## Latent Space Tricks
