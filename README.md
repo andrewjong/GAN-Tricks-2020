@@ -18,6 +18,7 @@ My own list of modern GAN tricks I come across.
 - Either that or explore some of the recent AutoEncoder approaches (though these aren't GANs), e.g. ALAE
 
 ## Architecture Tricks
+- Throw some linear layers between the latent space and convolution layers. According to the StyleGAN paper, it helps disentangle the latent space.
 
 #### Style encoding
 - AdaIN to modulate style globally across an image [Unofficial PyTorch implementation](https://github.com/naoto0804/pytorch-AdaIN)
