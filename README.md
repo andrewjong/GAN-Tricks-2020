@@ -7,6 +7,9 @@ My own list of modern GAN tricks I come across.
 #### Loss functions
 - Use Mescheder's R1/R2 losses for better convergence. Mescheder et al. 2018. [Code](https://github.com/LMescheder/GAN_stability).
 
+#### Activation functions
+- Don't use ReLU; it's possibly bad at low-->high dimension transformations [1](https://people.eecs.berkeley.edu/~bmild/fourfeat/)[2](https://vsitzmann.github.io/siren/). Try a fourier activation or smooth activation like Swish (a.k.a. SiLU) instead.
+
 #### Data augmentation
 - Use Differentiable Augmentation to reduce the required training data from ~70k to ~1k-2k, perhaps even the hundreds. Zhao et al. 2020. [Code](https://github.com/mit-han-lab/data-efficient-gans).
 
