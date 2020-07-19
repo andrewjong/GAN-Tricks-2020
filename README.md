@@ -33,6 +33,6 @@ My own list of modern GAN tricks I come across.
 
 
 # Other Resources
-- [2016, Soumith Chintala: ganhacks](https://github.com/soumith/ganhacks)
-- [2019, Marco Pasini: 10 Lessons I Learned Training GANs for one Year
+- 2016 - [Soumith Chintala: ganhacks](https://github.com/soumith/ganhacks)
+- 2019 - [Marco Pasini: 10 Lessons I Learned Training GANs for one Year
 ](https://towardsdatascience.com/10-lessons-i-learned-training-generative-adversarial-networks-gans-for-a-year-c9071159628)
