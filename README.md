@@ -10,6 +10,9 @@ My own list of modern GAN tricks I come across.
 #### Activation functions
 - Don't use ReLU; it's possibly bad at low-->high dimension transformations [1](https://people.eecs.berkeley.edu/~bmild/fourfeat/)[2](https://vsitzmann.github.io/siren/). Try a fourier activation or smooth activation like Swish (a.k.a. SiLU) instead.
 
+#### Optimization
+- Train generators and discriminators with different learning rates
+
 #### Data augmentation
 - Use Differentiable Augmentation to reduce the required training data from ~70k to ~1k-2k, perhaps even the hundreds. Zhao et al. 2020. [Code](https://github.com/mit-han-lab/data-efficient-gans).
 
@@ -28,3 +31,8 @@ My own list of modern GAN tricks I come across.
 ## Latent Space Tricks
 - SeFa to find meaningful latent spaces in <1 second. [Implemented in Rosinality's StyleGAN2 repo](https://github.com/rosinality/stylegan2-pytorch#closed-form-factorization-httpsarxivorgabs200706600).
 
+
+# Other Resources
+- [2016, Soumith Chintala: ganhacks](https://github.com/soumith/ganhacks)
+- [2019, Marco Pasini: 10 Lessons I Learned Training GANs for one Year
+](https://towardsdatascience.com/10-lessons-i-learned-training-generative-adversarial-networks-gans-for-a-year-c9071159628)
