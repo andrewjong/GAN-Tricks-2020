@@ -17,10 +17,13 @@ My own list of modern GAN tricks I come across.
 - Use ProgressiveGrowing as your base architecture
 - Either that or explore some of the recent AutoEncoder approaches (though these aren't GANs), e.g. ALAE
 
+## Architecture Tricks
+
+#### Style encoding
+- AdaIN to modulate style globally across an image [Unofficial PyTorch implementation](https://github.com/naoto0804/pytorch-AdaIN)
+- SPADE to modulate style at spatial locations within an image [Official PyTorch](https://github.com/NVlabs/SPADE)
+
 
 ## Latent Space Tricks
 - SeFa to find meaningful latent spaces in <1 second. [Implemented in Rosinality's StyleGAN2 repo](https://github.com/rosinality/stylegan2-pytorch#closed-form-factorization-httpsarxivorgabs200706600).
 
-## Encoding Tricks
-- AdaIN to modulate style globally across an image [Unofficial PyTorch implementation](https://github.com/naoto0804/pytorch-AdaIN)
-- SPADE to modulate style at spatial locations within an image [Official PyTorch](https://github.com/NVlabs/SPADE)
